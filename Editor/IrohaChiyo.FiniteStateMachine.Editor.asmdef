@@ -1,0 +1,18 @@
+{
+    "name": "IrohaChiyo.FiniteStateMachine.Editor",
+    "references": [
+        "GUID:9ab15f3942d74854ab180d3007a7045d",
+        "GUID:7e273450c97675140b7fb340dc1186a3"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

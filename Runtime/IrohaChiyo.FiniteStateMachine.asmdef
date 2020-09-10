@@ -1,0 +1,15 @@
+{
+    "name": "IrohaChiyo.FiniteStateMachine",
+    "references": [
+        "GUID:7e273450c97675140b7fb340dc1186a3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
