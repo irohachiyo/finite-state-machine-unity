@@ -15,7 +15,7 @@ namespace IrohaChiyo.FiniteStateMachine
             var myTarget = (IfStringIs)target;
             var variableMonoBehaviour = (MonoBehaviour)myTarget.variable;
             var variableName = variableMonoBehaviour ? variableMonoBehaviour.name : "String";
-            var newName = $"If {(myTarget.reverse ? "Not " : "")}{variableName} is \"{myTarget.equals}\"";
+            var newName = $"If {(myTarget.reverse ? "Not " : "")}{variableName} is \"{myTarget.text}\"";
             if (myTarget.name != newName) myTarget.name = newName;
         }
     }

@@ -8,8 +8,8 @@ namespace IrohaChiyo.FiniteStateMachine
     public class IfIntIsValue : MonoBehaviour
     {
         public IntVariable variable;
-        public bool reverse;
         public int value;
+        public bool reverse;
 
         private BoolVariable condition;
 

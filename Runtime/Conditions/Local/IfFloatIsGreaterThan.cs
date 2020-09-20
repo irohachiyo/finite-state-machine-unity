@@ -23,14 +23,7 @@ namespace IrohaChiyo.FiniteStateMachine
         {
             if (variable.Value == threshold)
             {
-                if (inclusive)
-                {
-                    condition.Value = true;
-                }
-                else
-                {
-                    condition.Value = false;
-                }
+                condition.Value = inclusive;
             }
             else
             {

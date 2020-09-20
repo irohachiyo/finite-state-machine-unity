@@ -5,11 +5,17 @@ using UnityEngine;
 namespace IrohaChiyo.FiniteStateMachine
 {
     [RequireComponent(typeof(BoolVariable))]
-    public class IfStringIs : MonoBehaviour
+    public class IfGlobalIntIsValue : NamedCondition
     {
-        public StringVariable variable;
-        public string equals;
+        public GlobalIntVariable variable;
+        public int value;
         public bool reverse;
+
+        public override string GetConditionName()
+        {
+            var asset = (ScriptableObject)variable;
+            return $"If {(asset ? asset.name : "Global Int")} Is {(reverse ? "Not " : "")}{value}";
+        }
 
         private BoolVariable condition;
 
@@ -20,7 +26,7 @@ namespace IrohaChiyo.FiniteStateMachine
 
         private void LateUpdate()
         {
-            condition.Value = variable.Value == equals ^ reverse;
+            condition.Value = variable.Value == value ^ reverse;
         }
     }
 }
